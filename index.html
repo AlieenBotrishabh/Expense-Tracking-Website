@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Expense Tracker</h1>
+        <img src="A3.gif" alt="Logo" class="logo" />
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="balance">
+        <div class="balance-card">
+          <h5>Total Balance</h5>
+          <span id="balance">$0.00</span>
+        </div>
+        <div class="balance-card">
+          <h5>Income</h5>
+          <span id="income">$0.00</span>
+        </div>
+        <div class="balance-card">
+          <h5>Expense</h5>
+          <span id="expense">$0.00</span>
+        </div>
+      </section>
+
+      <section class="transactions">
+        <h3>Transactions</h3>
+        <ul id="transactionList"></ul>
+        <div id="status"></div
+      </section>
+
+      <section class="add-transaction">
+        <h3>Add Transaction</h3>
+        <form id="transactionForm">
+          <div class="form-group">
+            <label>Type</label>
+            <div class="toggle-container">
+                <input type="radio" id="expense" name="type" value="expense" checked>
+                <label for="expense" class="option expense">Expense</label>
+                <input type="radio" id="income" name="type" value="income">
+                <label for="income" class="option income">Income</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              value="0"
+              min="0.01"
+              step="0.01"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="currency">Currency</label>
+            <select name="currency" required>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <!-- Add more currencies as needed -->
+            </select>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

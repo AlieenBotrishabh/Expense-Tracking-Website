@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+h1
+{
+  font-size: 40px;
+}
+
+/* Header Styles */
+header {
+  background-color: #178afc;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+header .logo {
+  width: 120px;
+  vertical-align: middle;
+}
+
+/* Main Styles */
+main {
+  padding: 30px 0;
+}
+
+/* Balance Section Styles */
+.balance {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  height: 200px;
+  text-align: center;
+}
+
+.balance-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.balance-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.balance-card h5 {
+  margin: 16;
+  color: #178afc;
+  font-size: 1rem;
+}
+
+.balance-card span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #178afc;
+}
+
+/* Transactions Section Styles */
+.transactions {
+  margin-bottom: 30px;
+}
+
+.transactions h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #178afc;
+}
+
+#transactionList {
+  list-style: none;
+  padding: 0;
+}
+
+#transactionList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#transactionList li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#transactionList .name h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #178afc;
+}
+
+#transactionList .amount {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #178afc;
+}
+
+#transactionList .amount.income {
+  color: #28a745;
+}
+
+#transactionList .amount.expense {
+  color: #dc3545;
+}
+
+#transactionList .action {
+  display: flex;
+  align-items: center;
+}
+
+#transactionList .delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#transactionList .delete:hover {
+  background-color: #c82333;
+}
+
+/* Add Transaction Section Styles */
+.add-transaction {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.add-transaction h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #178afc;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #178afc;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #178afc;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #178afc;
+}
+
+.remove-history-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.remove-history-btn:hover {
+  background-color: #c82333;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #178afc;
+  color: #fff;
+
+
+}
